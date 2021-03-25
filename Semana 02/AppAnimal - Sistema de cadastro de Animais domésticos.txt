@@ -1,0 +1,20 @@
+AppAnimal - Sistema de cadastro de Animais domésticos
+---------------------------------------------------------------------------------------------------------------------------------
+Descrição:
+Faça uma API para operações de cadastro de animais com os seguintes atributos:
+id: gerado randomicamente, nome (texto), idade(inteiro), sexo(macho/femea), cor (texto)
+
+Rotas:
+---------------------------------------------------------------------------------------------------------------------------------
+post /animais --> Deve enviar um objeto animal com todos os dados exceto id
+get /animais --> deve retorna todos os animais cadastrados
+get /animais/{id} --> deve retornar o animal com o id especificado
+delete /animais/{id} --> apaga o animal com o id especificado
+---------------------------------------------------------------------------------------------------------------------------------
+
+Dicas:
+---------------------------------------------------------------------------------------------------------------------------------
+- Armazene os dados numa List
+- Use o Insomnia para interagir com sua API
+- Exemplos abaixo de situação semelhante
+- Como BD é em memória ao atualizar o dados já cadastrados somem.
