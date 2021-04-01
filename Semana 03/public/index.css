@@ -1,0 +1,15 @@
+body{
+    background: rgba(5, 5, 161, 0.863);
+    color: white;
+    font: 13px verdana, arial, helvetiva, sans-serif;
+}
+
+#item {
+    background: #ffffff31;
+    width: 240px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font: 13px verdana, arial, helvetiva, sans-serif;
+    padding: 5px 5px;  
+}
