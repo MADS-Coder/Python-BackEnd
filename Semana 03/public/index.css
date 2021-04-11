@@ -1,15 +1,87 @@
 body{
-    background: rgba(5, 5, 161, 0.863);
+    background: #191970d8;
     color: white;
     font: 13px verdana, arial, helvetiva, sans-serif;
 }
 
 #item {
     background: #ffffff31;
-    width: 240px;
+    width: 320px;
     line-height: 30px;
     margin-bottom: 5px;
     border-radius: 10px;
     font: 13px verdana, arial, helvetiva, sans-serif;
     padding: 5px 5px;  
+}
+
+#form-animal {
+    margin: 0 auto;
+    width: 370px;
+    padding: 1em;
+    font: 15px verdana, arial, helvetiva, sans-serif;
+}
+
+form div + div {
+    margin-top: 1.5em;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+}
+
+#idade, #cor{
+    width: 60px;
+}
+
+#cadastrados {
+    text-align: center;
+    width: 370px;
+    margin-top: 0.1em;
+    padding-top: 2em;
+    font: 18px verdana, arial, helvetiva, sans-serif;
+}
+
+#cadastro {
+    text-align: center;
+    width: 370px;
+    margin-top: 0.1em;
+    padding-top: 0;
+    font: 19px verdana, arial, helvetiva, sans-serif;
+}
+
+#titulo {
+    margin-left: 435px;
+    border: 0;
+    border-radius: 0.6em;
+    width: 450px;
+    padding: 0.3em 0.3em;
+    background: #4682B4;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 1em;
+}
+
+#idade:focus, #nome:focus, #cor:focus{
+    background: #7da5c5c0;
+}
+#botao {
+    margin-top: 30px;
+    font-weight: bold;
+    font: 15px verdana, arial, helvetiva, sans-serif;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #4169E1;
+    color: white;
+    border: 0;
+    padding: 0.3em 1em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 40%;
+}
+
+#botao:hover {
+    background: #6495ED;
 }

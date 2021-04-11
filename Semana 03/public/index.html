@@ -10,15 +10,36 @@
     <title>App Animal</title>
 </head>
 <body>
-    <h1>AppAnimal - Aplicativo Animal</h1>
-    <h2>Novo Animal</h2>
+    <h1 id="titulo">AppAnimal - Aplicativo Animal</h1>
+    <br>
     <form id='form-animal'>
-        <input type="text" id="nome" placeholder="Nome do Animal">
-        <input type="submit" value="Gravar...">
+        <h5 id="cadastro">Cadastrar Animais</h5>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade">
+        </div>
+        <div>
+            <label for="sexo" id="sexo">Sexo:</label>
+            <input type="radio" name="opcao" value="Macho">Macho
+            <input type="radio" name="opcao" value="Fêmea">Fêmea
+        </div>
+        <div>
+            <label for="cor">Cor:</label>
+            <input type="text" id="cor">
+        </div>
+
+        <input type="submit" value="Cadastrar" id="botao">
+        
+        <div>
+            <h4 id="cadastrados">Animais Cadastrados</h4>
+            <ul id="lista-animais">
+            </ul>
+        </div>
     </form>
 
-    <h2>Animais cadastrados</h2>
-    <ul id="lista-animais">
-    </ul>
+
+
 </body>
 </html>
