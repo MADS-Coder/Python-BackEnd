@@ -11,7 +11,7 @@ class Respositoriocadastro():
 
     
     def criar(self, cadastro: schemas.Serie):
-        db_cadastro = models.Cadastrar(titulo=cadastro.titulo, ano=cadastro.ano,
+        db_cadastro = models.Serie(titulo=cadastro.titulo, ano=cadastro.ano,
                                         genero=cadastro.genero, qtd_temporadas=cadastro.qtd_temporadas)
 
         self.db.add(db_cadastro)
