@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String
 from src.infra.sqlalchemy.config.database import Base
 
 
-class Cadastrar(Base):
+class Serie(Base):
     __tablename__ = 'Cadastro'
 
     id = Column(Integer, primary_key=True, index=True)
@@ -12,6 +12,6 @@ class Cadastrar(Base):
     qtd_temporadas = Column(String)
 
 
-class Listar(Cadastrar):
+class Listar(Serie):
     id: Integer
     titulo: String

@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
-from src.schemas.schemas import Cadastrar
+from src.schemas.schemas import Serie
 from src.infra.sqlalchemy.config.database import get_banco_dados, criar_banco_dados
 from src.infra.sqlalchemy.repositorios.series import Respositoriocadastro
 
@@ -11,7 +11,7 @@ app = FastAPI()
 
 #Envia os dados via JSON.
 @app.post('/cadastros')
-def criar_cadastro(cadastro: Cadastrar, db: Session = Depends(get_banco_dados)):
+def criar_cadastro(cadastro: Serie, db: Session = Depends(get_banco_dados)):
     cadastro_criado = Respositoriocadastro(db).criar(cadastro)
     return cadastro_criado
 

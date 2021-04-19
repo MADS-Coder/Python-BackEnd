@@ -10,7 +10,7 @@ class Respositoriocadastro():
         self.db = db
 
     
-    def criar(self, cadastro: schemas.Cadastrar):
+    def criar(self, cadastro: schemas.Serie):
         db_cadastro = models.Cadastrar(titulo=cadastro.titulo, ano=cadastro.ano,
                                         genero=cadastro.genero, qtd_temporadas=cadastro.qtd_temporadas)
 
@@ -21,7 +21,7 @@ class Respositoriocadastro():
 
 
     def listar(self):
-        cadastro = self.db.query(models.Cadastrar).all()
+        cadastro = self.db.query(models.Serie).all()
         return cadastro
 
     
